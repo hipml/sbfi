@@ -195,9 +195,9 @@ int input(Tape* tape){
 
 int interpret(FILE* file){
     int token;
-    int status;
+    int status = 0;
     Tape tape;
-    Loop* stack;
+    Loop* stack = NULL;
 
     init(&tape);
 
